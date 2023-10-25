@@ -4,11 +4,7 @@ const Card = ({ card }) => {
 
 
     const flightStatus = () => {
-        if (card.launch_success === true) {
-            return 'Success'
-        } else {
-            return 'Failed'
-        }
+        return card.launch_success === true ? 'Success' : 'Failed';
     }
 
     const flightStatusColor = () => {
